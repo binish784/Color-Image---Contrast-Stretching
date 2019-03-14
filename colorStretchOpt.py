@@ -8,7 +8,7 @@ import cv2
 import numpy as np
 import matplotlib.pyplot as plt
 
-img=cv2.imread('inputImage2.jpg')
+img=cv2.imread('inputImage.jpg')
 
 pix_number=np.ma.count(img)
 print("number of pixels : " +str(pix_number))
@@ -101,4 +101,4 @@ for i in range(number_of_rows):
         newImage[i][j]=[BlueOnly[i][j],GreenOnly[i][j],RedOnly[i][j]]
 
 
-cv2.imwrite("newSat.jpg",newImage)
+cv2.imwrite("outputImage.jpg",newImage)
